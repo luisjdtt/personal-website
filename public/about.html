@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - Luis De Trejo</title>
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body class="flex min-h-screen flex-col justify-between bg-slate-950 text-white">
+    <!-- Container -->
+    <div class="w-full max-w-4xl p-4 mx-auto">
+      <!-- Header -->
+      <header class="flex items-center justify-between">
+        <!-- Profile Image -->
+        <img
+          src="images/funnydoodle.webp"
+          alt="Profile Picture"
+          class="h-16 w-16 rounded-full"
+        />
+        <!-- Navigation Links -->
+        <nav class="space-x-4">
+          <a href="index.html" class="text-gray-300 hover:text-white">Home</a>
+          <a href="about.html" class="text-white">About Me</a>
+          <a href="contact.html" class="text-gray-300 hover:text-white">Contact</a>
+        </nav>
+      </header>
+
+      <!-- Main Content -->
+      <main class="mt-16 flex-grow">
+        <h1 class="mb-8 text-4xl font-bold">About Me</h1>
+        <div class="flex flex-col items-start gap-8 md:flex-row">
+          <!-- Photo -->
+          <div class="h-32 w-32 flex-shrink-0 self-start">
+            <img
+              src="images/me.webp"
+              alt="Luis De Trejo"
+              class="h-full w-full border-2 border-gray-700 object-cover shadow-inner"
+            />
+          </div>
+          <!-- Text -->
+          <div
+            class="flex-grow rounded-lg border border-gray-700 p-6"
+          >
+            <h2 class="mb-4 text-2xl font-semibold">Hi, I'm Luis</h2>
+            <p class="mb-4 text-gray-300">
+              I'm a software developer from Mexico, fluent in both Spanish and
+              English. With extensive experience in full-stack development, I've
+              worked across various technologies but have a particular affinity
+              for React, React Native, and Django. I'm always eager to learn and
+              adapt, continuously exploring new tools and frameworks to expand
+              my skill set.
+            </p>
+            <p class="mb-4 text-gray-300">
+              Beyond coding, I have a keen interest in deep learning and am
+              focused on enhancing my UX and UI design skills to create more
+              intuitive and engaging user experiences. When I'm not at my desk,
+              you can find me reading, watching movies, or hitting the pavement
+              for a run.
+            </p>
+            <p class="text-gray-300">
+              If you're looking for someone who is passionate about technology
+              and committed to delivering quality software solutions, let's
+              connect! Keep scrolling to learn more about my work and how I can
+              help with your next project.
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-16 text-center text-gray-400 py-4">
+      <p>&copy; 2024 Luis De Trejo. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
