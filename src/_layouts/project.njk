@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{{ title }}</title>
+    <link href="/styles/main.css" rel="stylesheet"/>
+    <link rel="icon" type="image/webp" href="/assets/images/coffee.webp"/>
+    <style>
+      {
+        # gradient for cards #
+      }
+      @keyframes gradientBorder {
+        0% {
+          background-position: 0 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0 50%;
+        }
+      }
+      .group:hover .bg-gradient-to-r {
+        animation: gradientBorder 3s ease infinite;
+        background-size: 200% 200%;
+      }
+      {
+        # float animation for tech icons #
+      }
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+      .tech-icon {
+        animation: float 3s ease-in-out infinite;
+      }
+      .tech-icon:nth-child(odd) {
+        animation-delay: 0.5s;
+      }
+      .tech-label {
+        margin-top: 0.5rem;
+        font-size: 0.875rem;
+        color: #a0aec0;
+      }
+    </style>
+  </head>
+  <body
+    class="flex min-h-screen justify-center bg-slate-950 text-white">
+    <!-- Container -->
+    <div
+      class="w-full max-w-4xl p-4">
+      <!-- Header with back button -->
+      <header class="mb-12 flex items-center justify-between">
+        <a href="/" class="flex items-center text-gray-300 hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-6 w-6" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+          </svg>
+          Back to Projects
+        </a>
+      </header>
+      <!-- Main Content -->
+      {{ content | safe }}
+      <!-- Footer -->
+      {% include "footer.njk" %}
+    </div>
+  </body>
+</html>

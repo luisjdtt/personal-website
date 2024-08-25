@@ -1,21 +1,23 @@
-# My Personal Website
+# My Personal Website 🌐
 
-A simple and elegant personal website built with HTML, CSS, and Tailwind CSS to showcase my portfolio and skills.
+A simple and elegant personal website built with Eleventy and Tailwind CSS to showcase my portfolio and skills. 🚀
 
-## Features
+## Features ✨
 
-- Responsive design
-- Built with HTML and CSS
-- Utilizes Tailwind CSS for styling
-- Minimalist and clean layout
+- Responsive design 📱💻
+- Built with HTML and CSS 🎨
+- Utilizes Tailwind CSS for styling 🌈
+- Minimalist and clean layout 🧹
 
-## Getting Started
+## Getting Started 🏁
 
-1. Clone the repository
-2. Open `index.html` in your browser
+1. Clone the repository 📂
+2. In two terminals, run `npm run watch:css` and `npm run start` 🖥️
 
-## Customization
+## Build 🛠️
 
-Edit the HTML and CSS files to personalize the content and styling to your preferences.
+Run `npm run build` to build the project 🏗️
 
-## License
+## Eleventy 🚀
+
+You need to understand the basics of Eleventy to customize this website. Understand layout, data, and templates. 📚

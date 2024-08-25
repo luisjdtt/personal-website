@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{{ title }}</title>
+    <link href="/styles/main.css" rel="stylesheet"/>
+    <link rel="icon" type="image/webp" href="/assets/images/coffee.webp"/>
+  </head>
+  <body
+    class="flex min-h-screen justify-center bg-slate-950 text-white">
+    <!-- Container -->
+    <div
+      class="w-full max-w-4xl p-4">
+      <!-- Header -->
+      {% include "header.njk" %}
+      <!-- Main Content -->
+      {{ content | safe }}
+      <!-- Footer -->
+      {% include "footer.njk" %}
+    </div>
+  </body>
+</html>
