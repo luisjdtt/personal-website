@@ -7,17 +7,17 @@
     <link href="/styles/main.css" rel="stylesheet"/>
     <link rel="icon" type="image/webp" href="/assets/images/coffee.webp"/>
   </head>
-  <body
-    class="flex min-h-screen justify-center bg-slate-950 text-white">
+  <body class="flex flex-col min-h-screen bg-slate-950 text-white">
     <!-- Container -->
-    <div
-      class="w-full max-w-4xl p-4">
+    <div class="flex-grow w-full max-w-4xl mx-auto p-4 flex flex-col">
       <!-- Header -->
       {% include "header.njk" %}
       <!-- Main Content -->
-      {{ content | safe }}
-      <!-- Footer -->
-      {% include "footer.njk" %}
+      <main class="flex-grow">
+        {{ content | safe }}
+      </main>
     </div>
+    <!-- Footer -->
+    {% include "footer.njk" %}
   </body>
 </html>
