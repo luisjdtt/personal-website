@@ -1,7 +1,7 @@
 <header
     class="flex items-center justify-between">
     <!-- Profile Image -->
-    <a href="/" class="group">
+    <a href="{{ '/' | locale_url }}" class="group">
         <img
             src="/assets/images/funnydoodle.webp"
             alt="Profile Picture"
@@ -9,21 +9,19 @@
                 group-hover:animate-pulse"/>
     </a>
     <!-- Navigation Links -->
-    <nav class="space-x-4">
-        <a href="/" class="{% if page.url == '/' %}text-white {% else %}text-gray-300 hover:text-white{% endif %} relative group">
-            Home
-            <span class="absolute -bottom-1/4 left-0 {% if page.url == '/' %}w-full{% else %}w-0 group-hover:w-full{% endif %} h-0.5
-                bg-white transition-all duration-300"></span>
-        </a>
-        <a href="/about/" class="{% if page.url == '/about/' %}text-white {% else %}text-gray-300 hover:text-white{% endif %} relative group">
-            About Me
-            <span class="absolute -bottom-1/4 left-0 {% if page.url == '/about/' %}w-full{% else %}w-0 group-hover:w-full{% endif %} h-0.5
-                bg-white transition-all duration-300"></span>
-        </a>
-        <a href="/contact/" class="{% if page.url == '/contact/' %}text-white {% else %}text-gray-300 hover:text-white{% endif %} relative group">
-            Contact
-            <span class="absolute -bottom-1/4 left-0 {% if page.url == '/contact/' %}w-full{% else %}w-0 group-hover:w-full{% endif %}
-                h-0.5 bg-white transition-all duration-300"></span>
-        </a>
+    <nav class="space-x-4" aria-label="Primary">
+        <ul class="flex space-x-4">
+            {% set activePage = page.url %}
+            {% for item in navigation[page.lang] %}
+                <li>
+                    <a href="{{ item.url }}" class="{% if activePage == item.url %}text-white{% else %}text-gray-300 hover:text-white{% endif %} relative group">
+                        {{ item.text }}
+                        <span class="absolute -bottom-1/4 left-0 {% if activePage == item.url %}w-full{% else %}w-0 group-hover:w-full{% endif %} h-0.5
+                            bg-white transition-all duration-300"></span>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
     </nav>
+    
 </header>

@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 title: "Luis De Trejo - Software Developer"
+description: "Luis De Trejo Software Developer Homepage"
 ---
 
 <!-- Main Content -->
@@ -13,7 +14,7 @@ title: "Luis De Trejo - Software Developer"
   </p>
   <div class="mt-10 space-x-4">
     <a
-      href="/contact"
+      href="{{ "/contact" | locale_url}}"
       class="group relative overflow-hidden rounded-full bg-blue-600 px-4 py-2 text-white transition-all duration-300 ease-in-out hover:bg-blue-700"
     >
       <span class="relative z-10">Let's Talk</span>
@@ -22,7 +23,7 @@ title: "Luis De Trejo - Software Developer"
       ></span>
     </a>
     <a
-      href="/about"
+      href="{{ "/about" | locale_url}}"
       class="rounded-full border border-gray-400 px-4 py-2 text-gray-300 hover:border-white hover:text-white"
       >About Me</a
     >
@@ -42,11 +43,11 @@ title: "Luis De Trejo - Software Developer"
       ></div>
       <div class="relative rounded-lg bg-slate-950 p-1">
         <a
-          href="projects/mia-project-detail"
+          href="{{ "/projects/mia-project-detail" | locale_url}}"
           class="block overflow-hidden rounded-lg"
         >
           <img
-            src="assets/images/mia-main5.webp"
+            src="/assets/images/mia-main5.webp"
             alt="My Image Advisory App"
             class="h-auto w-full transform transition-transform duration-300 group-hover:scale-105"
           />
@@ -65,11 +66,11 @@ title: "Luis De Trejo - Software Developer"
       ></div>
       <div class="relative rounded-lg bg-slate-950 p-1">
         <a
-          href="projects/biu-project-detail"
+          href="{{ "/projects/biu-project-detail" | locale_url}}"
           class="block overflow-hidden rounded-lg"
         >
           <img
-            src="assets/images/biu-main5.webp"
+            src="/assets/images/biu-main5.webp"
             alt="BIU Audit"
             class="h-auto w-full transform transition-transform duration-300 group-hover:scale-105"
           />
@@ -85,11 +86,11 @@ title: "Luis De Trejo - Software Developer"
       ></div>
       <div class="relative rounded-lg bg-slate-950 p-1">
         <a
-          href="projects/chatbot-project-detail"
+          href="{{ "/projects/chatbot-project-detail" | locale_url}}"
           class="block overflow-hidden rounded-lg"
         >
           <img
-            src="assets/images/chatbot-main.webp"
+            src="/assets/images/chatbot-main.webp"
             alt="AI Chatbots for Teams & WhatsApp"
             class="h-auto w-full transform transition-transform duration-300 group-hover:scale-105"
           />
@@ -108,11 +109,11 @@ title: "Luis De Trejo - Software Developer"
       ></div>
       <div class="relative rounded-lg bg-slate-950 p-1">
         <a
-          href="projects/hubspot-extension"
+          href="{{ "/projects/hubspot-extension" | locale_url}}"
           class="block overflow-hidden rounded-lg"
         >
           <img
-            src="assets/images/extension-main2.webp"
+            src="/assets/images/extension-main2.webp"
             alt="Hubspot Chrome Extension"
             class="h-auto w-full transform transition-transform duration-300 group-hover:scale-105"
           />

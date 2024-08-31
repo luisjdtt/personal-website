@@ -1,7 +1,12 @@
-module.exports = function (eleventyConfig) {
+const { EleventyI18nPlugin } = require("@11ty/eleventy");
 
-  // Copy `img/` to `_site/img`
+module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("src/_redirects");
+  eleventyConfig.addPlugin(EleventyI18nPlugin, {
+    defaultLanguage: "en",
+    // languages: ["en", "es"],
+  });
 
   return {
     dir: {

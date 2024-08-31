@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang }}" dir="{{ languages[page.lang].dir }}">
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>{{ title }}</title>
     <link href="/styles/main.css" rel="stylesheet"/>
-    <link rel="icon" type="image/webp" href="/assets/images/coffee.webp"/>
+    <link rel="icon" type="image/webp" href="/assets/images/me-square-webp.webp"/>
+    <link rel="canonical" href="{{ meta.url }}{{ page.url }}"/>
+    <meta name="description" content="{{ description }}"/>
     <style>
       {
         # gradient for cards #
@@ -59,11 +61,11 @@
       class="w-full max-w-4xl p-4">
       <!-- Header with back button -->
       <header class="mb-12 flex items-center justify-between">
-        <a href="/" class="flex items-center text-gray-300 hover:text-white">
+        <a href="{{ "/" | locale_url}}" class="flex items-center text-gray-300 hover:text-white">
           <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-6 w-6" fill="none" viewbox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
           </svg>
-          Back to Projects
+          {{ languages[page.lang].back_to_projects }}
         </a>
       </header>
       <!-- Main Content -->
