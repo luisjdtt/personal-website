@@ -1,27 +1,26 @@
 <header
-    class="flex items-center justify-between">
-    <!-- Profile Image -->
-    <a href="{{ '/' | locale_url }}" class="group">
-        <img
-            src="/assets/images/funnydoodle.webp"
-            alt="Profile Picture"
-            class="h-16 w-16 rounded-full transition-transform duration-300 ease-in-out group-hover:scale-110
-                group-hover:animate-pulse"/>
-    </a>
-    <!-- Navigation Links -->
-    <nav class="space-x-4" aria-label="Primary">
-        <ul class="flex space-x-4">
-            {% set activePage = page.url %}
-            {% for item in navigation[page.lang] %}
-                <li>
-                    <a href="{{ item.url }}" class="{% if activePage == item.url %}text-white{% else %}text-gray-300 hover:text-white{% endif %} relative group">
-                        {{ item.text }}
-                        <span class="absolute -bottom-1/4 left-0 {% if activePage == item.url %}w-full{% else %}w-0 group-hover:w-full{% endif %} h-0.5
-                            bg-white transition-all duration-300"></span>
-                    </a>
-                </li>
-            {% endfor %}
-        </ul>
-    </nav>
-    
+  class="flex items-center justify-between">
+  <!-- Profile Image -->
+  <a href="{{ '/' | locale_url }}" class="group as animate__pulse animate__slow">
+    <img
+      src="/assets/images/funnydoodle.webp"
+      alt="Profile Picture"
+      class="h-16 w-16 rounded-full transition-transform duration-300 ease-in-out group-hover:scale-110
+        group-hover:animate-pulse"/>
+  </a>
+  <!-- Navigation Links -->
+  <nav class="space-x-4" aria-label="Primary">
+    <ul class="flex space-x-4">
+      {% set activePage = page.url %}
+      {% for item in navigation[page.lang] %}
+        <li>
+          <a href="{{ item.url }}" class="{% if activePage == item.url %}text-white{% else %}text-gray-300 hover:text-white{% endif %} relative group">
+            {{ item.text }}
+            <span class="absolute -bottom-1/4 left-0 {% if activePage == item.url %}w-full{% else %}w-0 group-hover:w-full{% endif %} h-0.5
+              bg-white transition-all duration-300"></span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
 </header>
