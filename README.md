@@ -42,6 +42,10 @@ npx http-server _site
 
 - [X] Add proper meta alternative tags for SEO due to having multiple languages.
 - [X] Fix animations using proper s_ prefix 
-- [X] Add 404 page
+- [X] Add 404 page with proper permalink
+- [X] Fix scroll behavior on content overflow with animations
+- [ ] Verify redirects file to make sure it works
 - [ ] Add a Google Drive link to download my resume
+- [ ] Review semantic tags of the website
+- [ ] Use Date.now() for the footer instead of hardcoding the year
 

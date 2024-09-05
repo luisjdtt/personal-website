@@ -13,9 +13,9 @@
       <!-- Header -->
       {% include "header.njk" %}
       <!-- Main Content -->
-      <main class="flex-grow">
+      <div class="flex-grow overflow-hidden">
         {{ content | safe }}
-      </main>
+      </div>
     </div>
     <!-- Footer -->
     {% include "footer.njk" %}
