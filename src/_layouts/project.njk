@@ -63,7 +63,9 @@
         </a>
       </header>
       <!-- Main Content -->
-      {{ content | safe }}
+      <main class="flex-grow overflow-hidden">
+        {{ content | safe }}
+      </main>
       <!-- Footer -->
       {% include "footer.njk" %}
     </div>
