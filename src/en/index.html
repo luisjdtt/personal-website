@@ -1,20 +1,28 @@
 ---
 layout: base.njk
-title: "Luis De Trejo - Software Developer"
-description: "Luis De Trejo Software Developer Homepage"
+title: "Luis De Trejo - Technical Lead & Software Architect"
+description: "Technical Lead and Software Architect building AWS serverless, AI-agent, full-stack, mobile, and enterprise integration systems."
 ---
 
 <!-- Main Content -->
-<main class="as s_animate__fadeIn animate__animated mt-48 text-center">
+<main class="as s_animate__fadeIn animate__animated mt-32 text-center">
   <h1
     class="as s_animate__rubberBand animate__slow animate__animated text-5xl font-bold"
   >
     Luis De Trejo
   </h1>
-  <h2 class="mt-3 text-xl font-medium">I fix and build stuff</h2>
-  <p class="mt-8 text-gray-400">
-    Full Stack Software Developer (Django, React, React Native, JAMStack, Spring
-    Boot | PyTorch)
+  <h2 class="mt-3 text-xl font-medium">
+    Technical Lead & Software Architect
+  </h2>
+  <p class="mx-auto mt-8 max-w-3xl text-gray-300">
+    I build production systems across AWS serverless, AI-agent platforms,
+    full-stack web, mobile apps, backend architecture, and enterprise
+    integrations.
+  </p>
+  <p class="mx-auto mt-4 max-w-3xl text-gray-400">
+    My strongest work is Roddy, a multi-tenant B2B AI-agent platform used by
+    real clients to automate sales and operational workflows across WhatsApp,
+    email, webchat, ERPs, CRMs, and internal systems.
   </p>
   <div class="mt-10 space-x-4">
     <a
@@ -38,9 +46,34 @@ description: "Luis De Trejo Software Developer Homepage"
 <!-- Selected Works Section -->
 <section class="mt-32">
   <h2 class="mb-2 text-2xl font-bold">Selected Works</h2>
-  <p class="mb-8 text-gray-400">2021 -> 2024</p>
+  <p class="mb-8 text-gray-400">Production systems, AI agents, mobile apps, and enterprise integrations</p>
 
   <div class="grid grid-cols-1 gap-x-10 gap-y-14 md:grid-cols-2">
+    <div
+      class="as s_animate__bounceInLeft animate__slow animate__animated group relative md:col-span-2"
+    >
+      <div
+        class="absolute -inset-0.5 rounded-lg bg-gradient-to-r from-blue-600 to-cyan-500 opacity-0 transition duration-300 ease-in-out group-hover:opacity-100"
+      ></div>
+      <div class="relative rounded-lg bg-slate-950 p-1">
+        <a
+          href="{{ '/projects/roddy-project-detail' | locale_url }}"
+          class="block overflow-hidden rounded-lg"
+        >
+          <img
+            src="/assets/images/chatbot-main2.webp"
+            alt="Roddy AI-agent platform"
+            class="h-auto w-full transform transition-transform duration-300 group-hover:scale-105"
+          />
+        </a>
+        <h3 class="mt-4 text-xl font-semibold">Roddy AI-Agent Platform</h3>
+        <p class="text-gray-400">
+          Production multi-tenant B2B platform for AI agents, serverless
+          workflows, ERP/CRM integrations, and client-facing automation
+        </p>
+      </div>
+    </div>
+
     <!-- Project Card -->
     <div
       class="as s_animate__bounceInLeft animate__slow animate__animated group relative"
